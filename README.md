@@ -1,6 +1,10 @@
 # mesh-shop (s3)
 
-> **Role in the zoo:** project `mesh-shop` of [oxzoo-live](https://github.com/saurav-codes/oxzoo-live-control/blob/main/zoo/README.md#projects), deployed with ox on server s3 at https://mesh-shop.s3.zoo.sorv.dev. The contract it follows is [DESIGN.md](https://github.com/saurav-codes/oxzoo-live-control/blob/main/zoo/DESIGN.md).
+Deployed with [ox](https://deploywithox.com): deploy a repo to your own server with one command, no Docker. [Docs](https://deploywithox.com/docs) · [Stack guides](https://deploywithox.com/docs/guides)
+
+**Live demo:** https://mesh-shop.s3.zoo.sorv.dev
+
+> **Role in the zoo:** project `mesh-shop` of [oxzoo-live](https://github.com/saurav-codes/oxzoo-live-control/blob/main/zoo/README.md#projects), deployed with [ox](https://deploywithox.com) on server s3 at https://mesh-shop.s3.zoo.sorv.dev. The contract it follows is [DESIGN.md](https://github.com/saurav-codes/oxzoo-live-control/blob/main/zoo/DESIGN.md).
 
 A multi-process monorepo in one ox project: a Go gateway as `[app]`, a static shop page
 built with Bun, two port workers (`orders` on Bun, `stock` on Python via uv), a plain
