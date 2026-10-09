@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mesh-shop</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; color: #1d2433; }
+    table { width: 100%; border-collapse: collapse; margin: .5rem 0 1.5rem; }
+    td, th { text-align: left; padding: .4rem; border-bottom: 1px solid #e3e6ec; }
+    button { min-height: 44px; padding: 0 1rem; border-radius: 8px; border: 1px solid #3b5bdb; background: #3b5bdb; color: #fff; cursor: pointer; }
+    ol { padding-left: 1.2rem; } .done { color: #2b8a3e; } .fail { color: #c92a2a; } .wait { color: #868e96; }
+    small { color: #868e96; }
+  </style>
+</head>
+<body>
+  <h1>mesh-shop</h1>
+  <p>Go gateway, Bun orders, Python stock, Node fulfiller, one ox project. An order runs the
+    <code>shop-order</code> chain: signed catalog lookup on s2, stock row lock, Redis queue, signed webhook to s1.</p>
+  <h2>Stock</h2>
+  <table><thead><tr><th>SKU</th><th>Left</th><th></th></tr></thead><tbody id="stock"></tbody></table>
+  <h2>Last order</h2>
+  <p id="status"><small>Place an order to follow its steps.</small></p>
+  <ol id="steps"></ol>
+  <h2>Recent orders</h2>
+  <table><thead><tr><th>#</th><th>SKU</th><th>Status</th></tr></thead><tbody id="orders"></tbody></table>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
